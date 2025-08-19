@@ -8,10 +8,10 @@
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[6vw] gap-6 text-gray-200 text-lg p-4">
                 @foreach ($links as $key => $link)
                     <li>
-                        <a class="hover:text-xl hover:underline duration-300"
+                        <a class="hover:text-xl hover:underline duration-300" @if(request()->routeIs(route($link)))
                             href={{ $link }}>{{ $key }}</a>
                     </li>
-                @endforeach
+                @endforeachg
 
 
 
